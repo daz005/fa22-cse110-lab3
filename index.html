@@ -1,10 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
+<head>
+    <title>This is title</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="cse 110 html lab2">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Derek Zhu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
+    <header>
+        <p>by <b>Derek Zhu</b></p>
+        <img src="./my_image_files/me.png" alt="me" width="446" height="436">
+        <p> Demo <em>only</em> for cse 110 <i>LAB2</i> </p>
+    
+    </header>   
+    <main>
+        <h1>Meeting Title: <br>CSE 12 Staff Weekly Meeting Minutes</h1>
+    </main>
+<hr>
 
-<h1>My First Heading</h1>
+<details>
+    <summary>Week 2: Monday 10/3 @3pm</summary>
+<ul>
+    <li> Meeting Recording 
+        <ul> 
+            <li> 
+                <a  href="https://urldefense.com/v3/__https://ucsd.zoom.us/rec/share/YFwo6asdLcmay4i8-bPhXxbHdGQCrrKDUI2nBhJqjwGdPnLBcEVSy2nOhiaC3sNG.bl57qaN7UhZzOY8u__;!!Mih3wA!DV7HYz6OfIzSoYgqWIbNDHRIJMdeMfeN-2c_F1gB5MK0UzEf5VsK76WfYpc23Nk5_UyfeATa5p3KVJUXzMA$" > 
+                    Here is the link
+                </a>
+            </li>
 
-<p>My first paragraph.</p>
+            <li>Passcode: u5x3XV$9</li>
+        </ul>
+    </li>
+    <li> Tutoring </li>
+    <li>PA2</li>
+    <li>Grading</li>
+    <li>Resubmission / Late policy</li>
+    <li>Discussion</li>
+</ul>
+</details>
+<hr>
+
+<details>
+    <summary>Week 1: Friday 19/23 @2pm</summary>
+<ul>
+    <li> Meeting Recording </li>
+    <li> Welcome </li>
+    <li> Introduction</li>
+    <li> Syllbus / Schedule </li>
+    
+    <li> Lecture / Running code 
+        <ul>
+            <li> Eclipse </li>
+            <li> VS Code Should Work 
+                <ul>
+                    <li> Must use command line 
+                        <ul>
+                            <li>May have trouble with PA1 and jUnit 4.0 </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li> <b>Fields</b> vs Memeber Variables </li>
+        </ul>
+    </li>
+
+    <li> Lecture Help </li>
+    <li> Tutoring </li>
+    <li> Calendar </li>
+    <li> PAs </li>
+    <li> Scheduling your Toutor Hours</li>
+    <li> Piazza </li> 
+    <li> Weekly Staff Meeting</li>
+    <li> CSE 11 from Spring 22</li>
+
+</ul>
+</details>
+<hr>
+
+<footer>
+    <div >
+        <h2>More  </h2>
+        <h3> What we offer in the lab: </h3>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <h3> <span>CSE Courses: </span> </h3>
+        <nav>
+            <a href="https://catalog.ucsd.edu/courses/CSE.html">Computer Science and Engineering (CSE)</a> 
+            <br><br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50">CSE 110 Description: Introduction to software development and engineering methods, including specification, design, implementation, testing, and process. An emphasis on team development, agile methods, and use of tools such as IDE’s, version control, and test harnesses. Prerequisites: CSE 100; restricted to students with junior or senior standing within the CS25, CS26, CS27, CS28, and EC26 majors. All other students will be allowed as space permits.
+            </textarea>
+            
+        </nav>
+
+
+        <p> Enjoy the Lab and have <strong>fun !</strong>  </p>
+
+        
+            <audio controls>
+            <source src="./my_audio_files/sample_audio_file.mp3" type="audio/mpeg">
+            </audio>
+        
+        
+        <br> 
+
+        
+            <video width="320" height="240" controls>
+                <source src="./my_video_files/sample-video-file.mp4" type="video/mp4">
+            </video>
+        
+
+        <br> 
+
+        
+        <form method="get">
+            
+            <fieldset>
+                <h3> Which lab do you like most? </h3>
+                <label for="lab">Choose lab from the list:</label>
+                <input list="labs" name="lab" id="lab">
+                <datalist id="labs">
+                    <option value="Lab1">
+                    <option value="Lab2">
+                    <option value="Lab3">
+                    <option value="Lab4">
+                    <option value="lab5">
+                </datalist>
+                <br><br>
+
+                <h3> Which lab spent time most? </h3>
+                <label>Choose lab from the list:</label>
+                <select id="labs2" name="labs2">
+                    <option value="Lab1">Lab1</option>
+                    <option value="Lab2">Lab2</option>
+                    <option value="Lab3">Lab3</option>
+                    <option value="Lab4">Lab4</option>
+                    <option value="Lab5">Lab5</option>
+                </select>
+                <br><br>
+
+
+                <label for="fname">First name:</label><input type="text" id="fname" name="fname"><br><br>
+                
+                <label for="lname">Last name:</label><input type="text" id="lname" name="lname"><br><br>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+    </div>
+
+    <br>
+    <button type="button" >Click Me but I don't do anything here</button>
+    
+</footer>
+
 
 </body>
 </html>
