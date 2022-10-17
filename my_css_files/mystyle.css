@@ -1,0 +1,195 @@
+
+/* 1. General CSS Topics */
+
+/* 1-1: Color: apply colors to your HTML elements */   
+
+/* 1-1-1: rgb(r, g, b) or rgba(r, g, b, a) : red, green, blue, alpha values */
+/* 1-1-2: #FFF or #FFFFFF     hex codes */
+/* 1-1-3: hsl(h, s, l) or hsla(h, s, l, a)   hue, saturation, lightness, alpha values */
+/* 1-1-4: Color name (i.e ‘orange’)   */
+
+/* 1-2: Background: apply background styles to your elements */
+/* 1-2-1: background-color */
+
+
+/* 1-3 Box Model: configure the containers that holds your HTML content */
+
+/* 1-3-1: Margin: spacing between html elements */
+/* 1-3-1-1: Long (margin-top, margin-bottom, margin-left, margin-right) */
+/* 1-3-1-2: Short (margin: <top> <right> <bottom> <left>) */
+/* 1-3-1-3: Auto margins: margin: auto */
+/* 1-3-2: Padding spacing within html elements */
+/* 1-3-2-1: Long (padding-top, padding-bottom, padding-left, padding-right) */
+/* 1-3-2-2: Short (padding: <top> <right> <bottom> <left>) */
+/* 1-3-2: borders around html elements, hint: apply borders before testing out padding and margin to better understand the difference between the two  */
+/*  border-style
+    border-color
+    border-width
+    border-radius
+*/
+
+/* 1-4:Text: style your text */
+/* color
+text-decoration
+text-align
+*/
+
+
+
+
+/* 1-5 Display /*
+/* 
+Experiment with these values: none, block, inline-block, inline. Include at least two of them in your page
+Apply these values to the display property
+*/
+
+
+/* 1-6 Sizing */
+/*
+    height
+    width
+    max-width
+    min-width
+*/
+
+/* 1-7 Position: element positioning on the page  */
+/*
+    2 of the following values: static, relative, fixed, absolute, sticky
+    Apply these values to the position property
+*/
+
+
+
+
+/* 1-8 : Pseudo-class elements that exist in your document conditionally */
+/*
+:hover
+:active
+*/
+p:active, h1:active, a:active{
+    background-color: yellow;
+}
+
+
+
+/* 1-9: Layouts */
+/* 1-9-1: Flexbox: allow your elements to lay themselves out automatically */
+/*
+apply flex to the display property
+Must have more than two children within the element that is using flexbox. Must use minimum three of the flexbox related attributes
+*/
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+ }
+
+
+/* 1-9-2: Grid:  instantiate a grid for your layouts */
+/*
+apply grid to the display property
+Must have more than two children within the element that is using the grid. Must use a minimum of three of the grid related attributes
+*/
+
+
+
+div {
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: #4CAF50 solid 2px;
+    margin: 5px 6px 7px 8px; 
+    padding: 5px 6px 7px 8px; 
+
+    background-color: black;
+    color: white;
+    text-align: left;
+
+    position: inherit;
+    left: 20px;
+}
+
+h2 {
+    text-decoration: underline;
+    margin: 2px 5px;  
+    padding: 2px 5px;
+    max-width: 1024px;
+    min-width: 50px;
+    height: auto;
+    width:auto;
+    position: relative;
+    left: 20px;
+}
+
+/* 1-9-3: Grid:  Responsiveness: make your website friendly for multiple devices  */
+/* At least one query based on the screen width
+Media Query
+*/
+
+/* 1-9-32: Fonts:  pick varying font styles to make your text fun to read  */
+/* 
+Include and use a 3rd party font (https://fonts.google.com/Links to an external site.). 
+You can load the font in either your HTML or your CSS
+*/
+
+body, h1, h2, h3, h4, h5, h6 
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 2. CSS Selectors */
+/* 2-1: Class Selector (.class) */
+.center {
+    text-align: center;
+    color: red;
+}
+
+/* 2-1-1: ID Selector (#id) */
+#para1 {
+    text-align: center;
+    color: red;
+    position: static;
+}
+
+/* 2-1-2: Universal Selector (*) */
+* {
+    text-align: center;
+    color: blue;
+}
+
+/* 2-1-3: Element Selector (element)  */
+p {
+    text-align: center;
+    color: hsl(148, 18%, 21%);
+}
+
+p.center {
+    text-align: center;
+    color: hsl(148, 29%, 10%);
+}
+
+
+/* 2-1-4: Attribute Selector (e.g. [attribute=foo])    */  
+a[target="_blank"] {
+    background-color: rgb(187, 237, 8);
+}
+
+/* 2-1-5: Pseudo-class Selector (e.g. p:hover) */
+div:hover {
+    background-color: MediumSeaGreen;
+}
+
+
+/* 2-1-6: Selector List (element, element)    */
+p::first-line {
+    color: #ff8400;
+    font-variant: small-caps;
+}
+
+
+
